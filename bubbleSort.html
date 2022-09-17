@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        // 선언부
+
+
+        // 1. 실행부에서 값을 받는다.
+
+        // 2. 배열을 왼쪽부터 확인한다.
+            // 1) array[i] 와 array[i + 1]
+            // 2) 1회전을 하고나면 맨 뒷자리는 가장 큰수가 오며
+            // 3) 다시 정리할 필요가 없어지므로 반복횟수는 -1을 하자.
+            // 4) 또한, 배열의 숫자가 5개라고 하면 총 검사횟수는 4회다.
+            // 5) 만약 array[i]가 array[a + 1] 보다 크다면 임시로 넣어야 함으로 변수를 하나 만들어야한다.
+            function bubblesort(array) {
+                let temp = "";
+                for( loop = 1; loop <= array.length - 1; loop++) {               // 전체 반복, array.length가 5라면 4번만 검사해도 됨.
+
+                    for( i = 0; i <= array.length-loop-1; i++) {        // 한줄에서 검사 구간
+                        
+                        if(array[i] > array[i+1] ) {
+                            temp = array[i];
+                            array[i] = array[i+1];
+                            array[i+1] = temp;
+                        }
+                    }
+                }
+                        return array;
+            }
+    </script>
+</head>
+<body>
+    <script>
+                console.log(bubblesort([7,4,9,1]));
+
+    </script>    
+
+</body>
+</html>
