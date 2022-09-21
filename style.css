@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.navbar_btn {
+    display: flex;
+}
+
+.navbar_btn {
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_btn {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0px;
+    height: 50px;
+}
+
+.navbar_btn i {
+    color: white;
+    font-size: 30px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 200;
+}
+
+.article span {
+    margin-top: 10px;
+    line-height: 180px;
+    text-align: center;
+}
+
+#a1,#a3:visited, #a1,#a3:link {
+    color: black;
+}
+
+#a2,#a4:visited, #a2,#a4:link {
+    color: whitesmoke;
+}
+
+#a1:hover , #a3:hover {
+    background-color: #808080;
+    color: whitesmoke;
+}
+
+#a2:hover , #a4:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+
+#Link1, #Link3 {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+#a1, #a3 {
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    
+}
+
+#a2, #a4 {
+    font-weight: bold;
+    border: 1px solid #808080;
+    background-color: #808080;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    
+}
+
+#dayBtn{
+    font-size: 20px;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: whitesmoke;
+}
+
+#dayBtn:visited {
+    color: #808080;
+}
+
+#dayBtn:hover {
+    color:whitesmoke;
+    background-color: black
+}
+#moon:hover {
+    color:yellow;
+}
+
+#backBtn {
+    font-size: 20px;
+    color:#808080;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: whitesmoke;
+}
+
+#backBtn:visited {
+    color: #808080;
+}
+
+#backBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+#forwardBtn {
+    font-size: 20px;
+    color:#808080;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: whitesmoke;
+}
+
+#forwardBtn:visited {
+    color: #808080;
+}
+
+#forwardBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+.threeButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -200px;
+}
+
+/* subPage1.html 적용*/
+.articleTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#imageGray {
+    border-radius: 10px;
+ 
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+td {
+    height: 240px;
+    width: 420px;   
+}
+
+img{
+    height: 180px;
+    width: 360px;
+    opacity: 0.4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+/* login.html 적용*/
+.LoginArea {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.LoginArea input {
+    font-size: 23px;
+    border:none;
+    border-bottom: 1px solid #999;
+    outline-color: bisque;
+    padding: 10px;
+}
+
+.LoginArea button {
+    margin-top: 30px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
+    width: 350px;
+    font-size: 20px;
+    background-color: #808080;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 12px;
+    border: none;
+}
+
+.LoginArea button:hover{
+    color:whitesmoke;
+    background-color:black;
+}
+
+
+#android {
+    font-size: 300px;
+    color: #808080;
+}
