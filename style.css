@@ -1,43 +1,103 @@
 
-body {
-    margin: 0;
-    font-family: 'Karla', sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
 }
 
 a {
     text-decoration: none;
-    color: #808080;
 }
 
-/* 전체 navbar CSS 시작 */
+.navbar_btn li {
+    list-style: none;
+}
+
+.navbar_btn a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+} 
 
 .navbar_btn {
     display: flex;
-}
-
-.navbar_btn {
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navbar_btn {
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: space-between;
+    padding: 10px;
     background-color: #808080;
-    border: 1px solid #808080;
-    border-radius: 5px;
-    padding: 0;
-    margin: 0px;
-    height: 50px;
 }
 
-.navbar_btn i {
-    color: white;
-    font-size: 30px;
+.LoginArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
 }
 
-/* 전체 navbar CSS 끝 */
+.android {
+    font-size: 250px;
+    color: #808080;
+}
 
-/* 전체 bottom 3Btn CSS 시작 */
+.LoginArea input {
+    font-size: 23px;
+    border:none;
+    border-bottom: 1px solid #999;
+    outline-color: bisque;
+    padding: 10px;
+    text-align: left;
+}
+
+.LoginArea button {
+    margin-top: 30px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
+    width: 350px;
+    font-size: 20px;
+    background-color: #808080;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 12px;
+    border: none;
+}
+
+.LoginArea button:hover{
+    color:whitesmoke;
+    background-color:black;
+}
+
+.threeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 0 20px 10px;
+    position: sticky;
+    bottom: 10px;
+}
+
+#forwardBtn:visited {
+    color: #808080;
+}
+
+#forwardBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+#backBtn:visited {
+    color: #808080;
+}
+
+#backBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
 
 #dayBtn{
     font-size: 20px;
@@ -68,14 +128,6 @@ a {
     background-color: whitesmoke;
 }
 
-#backBtn:visited {
-    color: #808080;
-}
-
-#backBtn:hover {
-    color:whitesmoke;
-    background-color: black;
-}
 
 #forwardBtn {
     font-size: 20px;
@@ -95,176 +147,161 @@ a {
     background-color: black;
 }
 
-.threeButton {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: -300px;
-}
 
-/* 전체 bottom 3Btn CSS 시작 */
+/* index css 시작 */
 
-/* login css 시작 */
-
-.LoginArea {
-    position: relative;
-    top: 120px;
+.article {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.LoginArea input {
-    font-size: 23px;
-    border:none;
-    border-bottom: 1px solid #999;
-    outline-color: bisque;
-    padding: 10px;
-}
-
-.LoginArea button {
-    margin-top: 30px;
-    padding: 10px 5px 10px 5px;
-    border-radius: 30px;
-    width: 350px;
-    font-size: 20px;
-    background-color: #808080;
-    color: whitesmoke;
-    font-weight: bold;
-    letter-spacing: 12px;
-    border: none;
-}
-
-.LoginArea button:hover{
-    color:whitesmoke;
-    background-color:black;
-}
-
-
-#android {
-    font-size: 300px;
-    color: #808080;
-}
-
-/* login css 끝 */
-
-/* index aiticle CSS 시작 */
-
-.article{
-    position: relative;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-
-}
-
-
-#Link1, #Link2 , #Link3 ,#Link4 {
-    padding: 50px;
-    line-height: 100px;
-}
-
-#a1,#a3:visited, #a1,#a3:link {
-    color: black;
-}
-
-#a2,#a4:visited, #a2,#a4:link {
-    color: whitesmoke;
-}
-
-#a1:hover , #a3:hover {
-    background-color: #808080;
-    color: whitesmoke;
-}
-
-#a2:hover , #a4:hover {
-    background-color:whitesmoke;
-    color: black;
-}
-
-
-#Link1, #Link3 {
-    background-color: #808080;
-    border: 1px solid #808080;
-    border-radius: 5px;
-}
-
-#a1, #a3 {
+#a1{
     font-weight: bold;
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     font-size: 20px;
-    
 }
 
-#a2, #a4 {
+#a2 {
     font-weight: bold;
     border: 1px solid #808080;
     background-color: #808080;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     font-size: 20px;
-    
 }
 
-/* index aiticle CSS 끝 */
-
-/* subPage1,2 css 시작 */
-.articleTable{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#firstArticle {
+    margin-top: 20px;
 }
 
-#imageGray {
-    border-radius: 10px;
- 
+.Link1 {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    padding: 50px 150px 50px 150px;
 }
 
-table{
-    border-collapse: collapse;
+.Link2 { 
+    padding: 50px;
+}
+
+#a1:link, #a1:visited {
+    color: black;
+}
+
+#a2:link, #a2:visited {
+    color: whitesmoke;
+}
+
+#a1:hover {
+    background-color: #808080;
+    color: whitesmoke;
+}
+
+#a2:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+
+/* index css 끝 */
+
+/* subPage1 css 시작 */
+
+.subPageArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+}
+
+.sa1 {
+    border: 5px solid #808080;
+    padding: 20px 0 20px 0;
+}
+
+.sa2 {
+    border: 5px solid #808080;
+    padding: 20px 0 20px 0;
+    background-color: #808080;
+}
+
+#startbox {
     margin-top: 10px;
-    text-align: center;
-}
-td {
-    height: 240px;
-    width: 420px;   
 }
 
-img{
-    height: 180px;
-    width: 360px;
-    opacity: 0.4;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* subPage1,2 css 끝 */
+/* subPage1 css 끝 */
 
 /* calculator css 시작 */
 
-table, tr, td {
-    border-collapse: collapse;
-    border: 1px solid red;
-}
-td {
-    padding: 5px 10px;
-    text-align: center;
+.imgClass {
+    background: lightblue url("./sample.jpg") no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
-input {
-    border: none;
+body .calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+}
+
+body form {
+    display: grid;
+    column-gap: 2px;
+    row-gap: 2px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows:  50px 50px 50px 50px 50px 50px;
+}
+
+#display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#AC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#AC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.operation {
+    border: 2px solid black;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.pInt {
+    border: 2px solid black;
+    background-color: #939196;
+    font-size: 20px;
+}
+
+#AC {
+    border: 2px solid black;
+    background-color:cornflowerblue;
+}
+
+#display {
     text-align: right;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid black;
 }
-input:focus{
-    background-color: ivory;
-}
-
-
 /* calculator css 끝 */
+

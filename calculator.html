@@ -7,45 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/995f5ecdc8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="style.css">
     <style>
-
-    * {
-        box-sizing: content-box;
-        margin: 0px;
-
-    }
-
-    .calculator{
-        display: grid;
-    } 
-
     </style>
     <title>darkNwhite_calculator</title>
 
 </head>
-<body>
-    <div class ="calculator">
-        <input type= "text" id ="resultBox"value ="display" onclick="">
-        <input type= "button" value="/" onclick="">
+<body style="background-color:white;">
+    <div class = "navbar">
+        <ul class = "navbar_btn">
+            <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="./subPage1.html"><i class="fa-solid fa-person-rays"></i></a></li>
+            <li><a href="./subPage2.html"><i class="fa-sharp fa-solid fa-camera-retro"></i></a></li>
+            <li><a href="./calculator.html"><i class="fa-solid fa-database"></i></a></li>
+        </ul>
     </div>
-    <div class ="calculator">
-        <input type= "button" value="1" onclick="">
-        <input type= "button" value="2" onclick="">
-        <input type= "button" value="3" onclick="">
-        <input type= "button" value="*" onclick="">
+    <div class = "calculator">
+        <form name="form">
+            <input id= "display" type= "text" id ="resultBox" value ="display" onclick="">
+            <input id= "AC" type= "button" value="AC" onclick="">
+            <input class ="operation" type= "button" value="/" onclick="">
+            <input class ="pInt" type= "button" value="1" onclick="">
+            <input class ="pInt" type= "button" value="2" onclick="">
+            <input class ="pInt" type= "button" value="3" onclick="">
+            <input class ="operation" type= "button" value="*" onclick="">
+            <input class ="pInt" type= "button" value="4" onclick="">
+            <input class ="pInt" type= "button" value="5" onclick="">
+            <input class ="pInt" type= "button" value="6" onclick="">
+            <input class ="operation" type= "button" value="+" onclick="">
+            <input class ="pInt" type= "button" value="7" onclick="">
+            <input class ="pInt" type= "button" value="8" onclick="">
+            <input class ="pInt" type= "button" value="9" onclick="">
+            <input class ="operation" type= "button" value="-" onclick="">
+            <input class ="operation" type= "button" value="." onclick="">
+            <input class ="pInt" type= "button" value="0" onclick="">
+            <input class ="operation" id= "equal" type= "button" value="=" onclick="">
+        </form> 
     </div>
-    <div class ="calculator">
-        <input type= "button" value="4" onclick="">
-        <input type= "button" value="5" onclick="">
-        <input type= "button" value="6" onclick="">
-        <input type= "button" value="+" onclick="">
+    <div class = "threeButton"> 
+        <div>
+            <a id = "backBtn" href="./subPage2.html"><i class="fa-solid fa-circle-left"></i> Back</a>
+        </div>
+        <div class = "dayAndNight_Btn">
+            <a id = "dayBtn" href=""><i id = "moon" class="fa-regular fa-moon"></i>Night</a>
+        </div>
+        <div>
+            <a id = "forwardBtn" href="./calculator.html">Forward <i class="fa-solid fa-circle-right"></i></a>
+        </div>
     </div>
-    <div class ="calculator">
-        <input type= "button" value="-" onclick="">
-        <input type= "button" value="." onclick="">
-        <input type= "button" value="0" onclick="">
-        <input type= "button" value="=" onclick="">
-    </div>
-
 </body>
 </html>

@@ -9,19 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <title>darkNwhite_Login</title>
     <link rel=stylesheet href="style.css">
+    <script>
+        let dayAndNight = function() {
+            document.querySelector('body').style.backgroundColor = "black";
+        }
+    </script>
 </head>
 <body>
-    <div class = "navbar">
-        <ul class = "navbar_btn">
-            <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
-            <li><a href="./subPage1.html"><i class="fa-solid fa-person-rays"></i></a></li>
-            <li><a href="./subPage2.html"><i class="fa-sharp fa-solid fa-camera-retro"></i></a></li>
-            <li><a href="./calculator.html"><i class="fa-solid fa-database"></i></a></li>
-        </ul>
-    </div>
+    <ul class = "navbar_btn">
+        <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+        <li><a href="./subPage1.html"><i class="fa-solid fa-person-rays"></i></a></li>
+        <li><a href="./subPage2.html"><i class="fa-sharp fa-solid fa-camera-retro"></i></a></li>
+        <li><a href="./calculator.html"><i class="fa-solid fa-database"></i></a></li>
+    </ul>
     <div class = "LoginArea">
         <div class = "Sticker">
-            <a id = "android"><i class="fa-brands fa-android"></i></a>
+            <i class= "android fa-brands fa-android"></i>
         </div>
         <div id = nameArea>
             <input type ="text" name="ID" id = "id" autocomplete="off" placeholder="User Name">
@@ -34,15 +37,16 @@
             <button type="submit">LOGIN</button>
         </div>
     </div>
+    
     <div class = "threeButton">
-        <div>
-            <a id = "backBtn" href="./login.html"><i class="fa-solid fa-circle-left"></i>Back</a>
+        <div class = "leftBtn">
+            <a id = "backBtn" href="./login.html"><i class="fa-solid fa-circle-left"></i> Back</a>
         </div>
         <div class = "dayAndNight_Btn">
-            <a id = "dayBtn" href=""><i id = "moon" class="fa-regular fa-moon"></i>Night</a>
+            <a id = "dayBtn" onclick="dayAndNight()"><i id = "moon" class="fa-regular fa-moon"></i>Night</a>
         </div>
         <div>
-            <a id = "forwardBtn" href="./index.html"><i class="fa-solid fa-circle-right"></i>forward</a>
+            <a id = "forwardBtn" href="./index.html">Forward <i class="fa-solid fa-circle-right"></i></a>
         </div>
     </div>
 </body>
