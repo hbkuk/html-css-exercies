@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Karla', sans-serif;
@@ -7,6 +8,8 @@ a {
     text-decoration: none;
     color: #808080;
 }
+
+/* 전체 navbar CSS 시작 */
 
 .navbar_btn {
     display: flex;
@@ -32,63 +35,9 @@ a {
     font-size: 30px;
 }
 
-.article{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 200;
-}
+/* 전체 navbar CSS 끝 */
 
-.article span {
-    margin-top: 10px;
-    line-height: 180px;
-    text-align: center;
-}
-
-#a1,#a3:visited, #a1,#a3:link {
-    color: black;
-}
-
-#a2,#a4:visited, #a2,#a4:link {
-    color: whitesmoke;
-}
-
-#a1:hover , #a3:hover {
-    background-color: #808080;
-    color: whitesmoke;
-}
-
-#a2:hover , #a4:hover {
-    background-color:whitesmoke;
-    color: black;
-}
-
-
-#Link1, #Link3 {
-    background-color: #808080;
-    border: 1px solid #808080;
-    border-radius: 5px;
-}
-
-#a1, #a3 {
-    font-weight: bold;
-    border: 1px solid whitesmoke;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    padding: 5px 20px 5px 20px;
-    font-size: 20px;
-    
-}
-
-#a2, #a4 {
-    font-weight: bold;
-    border: 1px solid #808080;
-    background-color: #808080;
-    border-radius: 20px;
-    padding: 5px 20px 5px 20px;
-    font-size: 20px;
-    
-}
+/* 전체 bottom 3Btn CSS 시작 */
 
 #dayBtn{
     font-size: 20px;
@@ -153,47 +102,19 @@ a {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    bottom: -200px;
+    bottom: -300px;
 }
 
-/* subPage1.html 적용*/
-.articleTable{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+/* 전체 bottom 3Btn CSS 시작 */
 
-#imageGray {
-    border-radius: 10px;
- 
-}
+/* login css 시작 */
 
-table{
-    border-collapse: collapse;
-    margin-top: 10px;
-    text-align: center;
-}
-td {
-    height: 240px;
-    width: 420px;   
-}
-
-img{
-    height: 180px;
-    width: 360px;
-    opacity: 0.4;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-}
-
-/* login.html 적용*/
 .LoginArea {
     position: relative;
     top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .LoginArea input {
@@ -227,3 +148,123 @@ img{
     font-size: 300px;
     color: #808080;
 }
+
+/* login css 끝 */
+
+/* index aiticle CSS 시작 */
+
+.article{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+#Link1, #Link2 , #Link3 ,#Link4 {
+    padding: 50px;
+    line-height: 100px;
+}
+
+#a1,#a3:visited, #a1,#a3:link {
+    color: black;
+}
+
+#a2,#a4:visited, #a2,#a4:link {
+    color: whitesmoke;
+}
+
+#a1:hover , #a3:hover {
+    background-color: #808080;
+    color: whitesmoke;
+}
+
+#a2:hover , #a4:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+
+#Link1, #Link3 {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+#a1, #a3 {
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    
+}
+
+#a2, #a4 {
+    font-weight: bold;
+    border: 1px solid #808080;
+    background-color: #808080;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    
+}
+
+/* index aiticle CSS 끝 */
+
+/* subPage1,2 css 시작 */
+.articleTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#imageGray {
+    border-radius: 10px;
+ 
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+td {
+    height: 240px;
+    width: 420px;   
+}
+
+img{
+    height: 180px;
+    width: 360px;
+    opacity: 0.4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* subPage1,2 css 끝 */
+
+/* calculator css 시작 */
+
+table, tr, td {
+    border-collapse: collapse;
+    border: 1px solid red;
+}
+td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+input {
+    border: none;
+    text-align: right;
+}
+input:focus{
+    background-color: ivory;
+}
+
+
+/* calculator css 끝 */
