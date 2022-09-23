@@ -104,7 +104,9 @@ a {
     border: 2px solid #808080;
     border-radius: 15px;
     padding: 5px 20px 5px 20px;
-    background-color: whitesmoke;
+    background-color: white;
+    color: #808080;
+
 }
 
 #dayBtn:visited {
@@ -237,17 +239,12 @@ a {
 
 /* calculator css 시작 */
 
-.imgClass {
-    background: lightblue url("./sample.jpg") no-repeat fixed center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
 
 body .calculator{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     height: 70vh;
     
 }

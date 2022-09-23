@@ -9,13 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <title>darkNwhite_Login</title>
     <link rel=stylesheet href="style.css">
-    <script>
-        let dayAndNight = function() {
-            document.querySelector('body').style.backgroundColor = "black";
-        }
-    </script>
+    <script type="text/javascript" src="javascript.js"></script> 
 </head>
-<body>
+<body id = "h1" style="background:white;">
     <ul class = "navbar_btn">
         <li><a href="./index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
         <li><a href="./subPage1.html"><i class="fa-solid fa-person-rays"></i></a></li>
@@ -43,7 +39,7 @@
             <a id = "backBtn" href="./login.html"><i class="fa-solid fa-circle-left"></i> Back</a>
         </div>
         <div class = "dayAndNight_Btn">
-            <a id = "dayBtn" onclick="dayAndNight()"><i id = "moon" class="fa-regular fa-moon"></i>Night</a>
+            <a id = "dayBtn" ><i id = "moon" class="fa-regular fa-moon" ></i>Night</a>
         </div>
         <div>
             <a id = "forwardBtn" href="./index.html">Forward <i class="fa-solid fa-circle-right"></i></a>
