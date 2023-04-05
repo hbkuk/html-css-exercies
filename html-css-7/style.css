@@ -1,0 +1,304 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar_btn li {
+    list-style: none;
+}
+
+.navbar_btn a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+} 
+
+.navbar_btn {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #808080;
+}
+
+.LoginArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.android {
+    font-size: 250px;
+    color: #808080;
+}
+
+.LoginArea input {
+    font-size: 23px;
+    border:none;
+    border-bottom: 1px solid #999;
+    outline-color: bisque;
+    padding: 10px;
+    text-align: left;
+}
+
+.LoginArea button {
+    margin-top: 30px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
+    width: 350px;
+    font-size: 20px;
+    background-color: #808080;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 12px;
+    border: none;
+}
+
+.LoginArea button:hover{
+    color:whitesmoke;
+    background-color:black;
+}
+
+.threeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 0 20px 10px;
+    position: sticky;
+    bottom: 10px;
+}
+
+#forwardBtn:visited {
+    color: #808080;
+}
+
+#forwardBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+#backBtn:visited {
+    color: #808080;
+}
+
+#backBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+#dayBtn{
+    font-size: 20px;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    color: #808080;
+
+}
+
+#dayBtn:visited {
+    color: #808080;
+}
+
+#dayBtn:hover {
+    color:whitesmoke;
+    background-color: black
+}
+#moon:hover {
+    color:yellow;
+}
+
+#backBtn {
+    font-size: 20px;
+    color:#808080;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: whitesmoke;
+}
+
+
+#forwardBtn {
+    font-size: 20px;
+    color:#808080;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    background-color: whitesmoke;
+}
+
+#forwardBtn:visited {
+    color: #808080;
+}
+
+#forwardBtn:hover {
+    color:whitesmoke;
+    background-color: black;
+}
+
+
+/* index css 시작 */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#a1{
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+}
+
+#a2 {
+    font-weight: bold;
+    border: 1px solid #808080;
+    background-color: #808080;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+}
+
+#firstArticle {
+    margin-top: 20px;
+}
+
+.Link1 {
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    padding: 50px 150px 50px 150px;
+}
+
+.Link2 { 
+    padding: 50px;
+}
+
+#a1:link, #a1:visited {
+    color: black;
+}
+
+#a2:link, #a2:visited {
+    color: whitesmoke;
+}
+
+#a1:hover {
+    background-color: #808080;
+    color: whitesmoke;
+}
+
+#a2:hover {
+    background-color:whitesmoke;
+    color: black;
+}
+
+
+/* index css 끝 */
+
+/* subPage1 css 시작 */
+
+.subPageArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+}
+
+.sa1 {
+    border: 5px solid #808080;
+    padding: 20px 0 20px 0;
+}
+
+.sa2 {
+    border: 5px solid #808080;
+    padding: 20px 0 20px 0;
+    background-color: #808080;
+}
+
+#startbox {
+    margin-top: 10px;
+}
+
+/* subPage1 css 끝 */
+
+/* calculator css 시작 */
+
+
+body .calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 70vh;
+    
+}
+
+body form {
+    display: grid;
+    column-gap: 2px;
+    row-gap: 2px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows:  50px 50px 50px 50px 50px 50px;
+}
+
+#display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#AC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#AC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.operation {
+    border: 2px solid black;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.pInt {
+    border: 2px solid black;
+    background-color: #939196;
+    font-size: 20px;
+}
+
+#AC {
+    border: 2px solid black;
+    background-color:cornflowerblue;
+}
+
+#display {
+    text-align: right;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+}
+/* calculator css 끝 */
+
