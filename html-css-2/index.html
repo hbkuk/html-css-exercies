@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>구구단</title>
+    <style>
+      h1{
+        border-style: solid;
+        border-width: 3px;
+        margin: 3px;
+        padding: 3px;
+        border-top-color: blueviolet;
+        border-left-color: royalblue;
+        border-right-color: mediumpurple;
+        border-bottom-color: slateblue;
+        font-size: 30px; color:indigo; text-align: center;
+      }
+      #article{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+      }
+      table{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+        th{
+        font-size: 20px;
+        color:royalblue;
+        background-color: #bbdefb;
+      }
+        td{
+        font-size: 17px;
+        text-align: center;
+        background-color: #e3f2fd;
+      }
+        button{
+        font:12px "나눔고딕";
+        background:#fff;
+        border:1px solid #aaa;
+        padding:10px;
+      }
+        @media (max-width: 850px){
+          #article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Multiplication</h1>
+    <button onclick="nineByNineGame();">구구단 게임 시작!</button>
+    <div id ="article">
+    <script>
+      var i = 2;
+      while(i<10){
+      var j= 1;
+          document.write("<table>");
+          document.write("<th>"+i+"단"+"</th>");
+        while(j<10){
+          document.write("<tr>");
+          document.write("<td>"+i+'\u00A0'+"X"+ '\u00A0' +j+'\u00A0'+"="+'\u00A0'+i*j+"</td>");
+          document.write("</tr>");
+          j = j+1;
+        }
+          document.write("</table>");
+        i = i +1;
+      }
+    </script>
+    </div>
+  </body>
+</html>
